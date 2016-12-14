@@ -40,11 +40,14 @@ namespace DLLTestApplication
             //set character limit to 80
             rep.setLineCharacterLimit(80);
 
+            //set the end character to space and dont remove them
+            rep.setEndCharacter(' ',false);
+
             //add text
             rep.appendText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie orci justo, vel cursus tortor mattis vel. Praesent scelerisque est urna, ac ullamcorper turpis rhoncus nec. Etiam dapibus sollicitudin orci, sit amet porttitor ex varius at. Nulla at felis mi. Maecenas interdum lorem risus, non dapibus justo cursus quis. Donec quis dui sollicitudin, maximus turpis sed, efficitur erat. Integer feugiat varius sollicitudin. Fusce laoreet, diam quis placerat iaculis, arcu sapien feugiat mi, quis volutpat nunc diam ac lorem. Quisque suscipit erat vel nulla posuere aliquam. Nullam auctor, felis vel feugiat sollicitudin, augue lacus convallis orci, sed interdum magna augue id diam. Pellentesque efficitur turpis pharetra, fringilla nulla ac, sagittis dolor. Nullam bibendum ultrices molestie. Donec hendrerit turpis nec rhoncus rutrum.");
 
-            //start a new line
-            rep.breakLine();
+            //fill the next line with "#"
+            rep.fillLineWith('#');
 
             //add the table from 2D array
             rep.addTable(table,1);

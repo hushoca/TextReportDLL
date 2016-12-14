@@ -17,6 +17,12 @@ For all the classes and methods please check the help file which is under the Do
 > - Well documented.
 
 ## Changelog ##
-Still in version 1.0
+**Version 1.1**
+> - Changed the line character limiting.
+> - Added setEndCharacter() function. (Sets which character will be the last character in line, after the character limit is reached. Makes sure that words are not cut in the middle. End character is set to space by default.)
+> - Added fillLineWith() function. (Fills the next line with a specific character.)
+
+**Version 1.0**
+> PLEASE SEE THE DOCUMENTATION!
 
 ![](https://cdn.meme.am/instances/500x/67126131.jpg)
